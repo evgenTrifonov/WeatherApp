@@ -11,6 +11,9 @@
 		5C85FE7627D75B9F007A7907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE7527D75B9F007A7907 /* ContentView.swift */; };
 		5C85FE7827D75BA0007A7907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FE7727D75BA0007A7907 /* Assets.xcassets */; };
 		5C85FE7B27D75BA0007A7907 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FE7A27D75BA0007A7907 /* Preview Assets.xcassets */; };
+		5C85FE8827D75F01007A7907 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE8727D75F01007A7907 /* API.swift */; };
+		5C85FE8A27D75F80007A7907 /* API+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE8927D75F80007A7907 /* API+Extentions.swift */; };
+		5C85FE8C27D7614B007A7907 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE8B27D7614B007A7907 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		5C85FE7527D75B9F007A7907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C85FE7727D75BA0007A7907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C85FE7A27D75BA0007A7907 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C85FE8727D75F01007A7907 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5C85FE8927D75F80007A7907 /* API+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Extentions.swift"; sourceTree = "<group>"; };
+		5C85FE8B27D7614B007A7907 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,12 @@
 		5C85FE7227D75B9F007A7907 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				5C85FE8627D75ED7007A7907 /* LottieAnimations */,
+				5C85FE8527D75EC8007A7907 /* ViewModels */,
+				5C85FE8427D75EB8007A7907 /* Views */,
+				5C85FE8327D75EA0007A7907 /* Models */,
+				5C85FE8227D75E91007A7907 /* Networking */,
+				5C85FE8127D75E6B007A7907 /* Helpers */,
 				5C85FE7327D75B9F007A7907 /* WeatherAppApp.swift */,
 				5C85FE7527D75B9F007A7907 /* ContentView.swift */,
 				5C85FE7727D75BA0007A7907 /* Assets.xcassets */,
@@ -65,6 +77,51 @@
 				5C85FE7A27D75BA0007A7907 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C85FE8127D75E6B007A7907 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5C85FE8227D75E91007A7907 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5C85FE8727D75F01007A7907 /* API.swift */,
+				5C85FE8927D75F80007A7907 /* API+Extentions.swift */,
+				5C85FE8B27D7614B007A7907 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5C85FE8327D75EA0007A7907 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C85FE8427D75EB8007A7907 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C85FE8527D75EC8007A7907 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5C85FE8627D75ED7007A7907 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LottieAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C85FE7627D75B9F007A7907 /* ContentView.swift in Sources */,
+				5C85FE8A27D75F80007A7907 /* API+Extentions.swift in Sources */,
+				5C85FE8C27D7614B007A7907 /* NetworkManager.swift in Sources */,
+				5C85FE8827D75F01007A7907 /* API.swift in Sources */,
 				5C85FE7427D75B9F007A7907 /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
