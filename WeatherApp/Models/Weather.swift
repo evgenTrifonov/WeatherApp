@@ -10,38 +10,38 @@ import Foundation
 class Weather: Codable, Identifiable {
     var dt: Int
     var temp: Double
-    var feels_like: Double
+    var feelsLike: Double
     var pressure: Double
     var humidity: Int
-    var dew_point: Double
+    var dewPoint: Double
     var clouds: Int
-    var wind_speed: Double
-    var wind_deg: Int
+    var windSpeed: Double
+    var windDeg: Int
     var weather: [WeatherDetail]
     
     enum CodingKey: String {
         case dt
         case temp
-        case feels_like
+        case feelsLike
         case pressure
         case humidity
-        case dew_point
+        case dewPoint
         case clouds
-        case wind_speed
-        case wind_deg
+        case windSpeed
+        case windDeg
         case weather
     }
     
     init() {
         dt = 0
         temp = 0.0
-        feels_like = 0.0
+        feelsLike = 0.0
         pressure = 0.0
         humidity = 0
-        dew_point = 0.0
+        dewPoint = 0.0
         clouds = 0
-        wind_speed = 0.0
-        wind_deg = 0
+        windSpeed = 0.0
+        windDeg = 0
         weather = []
         
         
