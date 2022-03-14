@@ -12,8 +12,11 @@ struct HourlyWeatherView: View {
     @ObservedObject var cityVM: CityViewViewModel
     
     var body: some View {
+        Text("Прогноз на 10ДН")
+            .frame(alignment: .topLeading)
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
+                
             ForEach(cityVM.weather.hourly) { weather in
                 let icon = cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon :
                     "sun.max.fill")

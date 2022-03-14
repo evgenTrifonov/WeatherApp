@@ -28,7 +28,7 @@ final class CityViewViewModel: ObservableObject {
     
     private lazy var dayFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEE"
+        formatter.dateFormat = "dd EEE"
         return formatter
     }()
     
@@ -82,7 +82,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     func getTempFor(temp: Double) -> String {
-        return String(format: "%0.1f", temp)
+        return String(format: "%0.1f", temp - 37.0)
     }
     
     func getDayFor(timestamp: Int) -> String {
