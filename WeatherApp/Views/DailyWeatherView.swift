@@ -22,7 +22,7 @@ struct DailyWeatherView: View {
     private func dailyCell(weater: DailyWeather) -> some View {
         HStack {
             Text(cityVM.getDayFor(timestamp: weater.dt).uppercased())
-                .frame(width: 50)
+                .frame(width: 30)
             Spacer()
             
             Text("\(cityVM.getTempFor(temp: weater.temp.max)) | \(cityVM.getTempFor(temp: weater.temp.min)) ℃")

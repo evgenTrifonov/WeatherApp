@@ -13,7 +13,8 @@ struct HourlyWeatherView: View {
     
     var body: some View {
         Text("Прогноз на 10ДН")
-            .frame(alignment: .topLeading)
+            .frame(alignment: .leading)
+            .foregroundColor(.white)
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
                 

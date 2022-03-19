@@ -7,6 +7,8 @@
 
 import Foundation
 
+    var uuid = UUID()
+
 class Weather: Codable, Identifiable {
     var dt: Int
     var temp: Double
@@ -50,8 +52,8 @@ class Weather: Codable, Identifiable {
     }
 }
 
-extension Weather {
-    var id: UUID {
-        return UUID()
-    }
-}
+//extension Weather {
+//    var id: UUID {
+//        return UUID()
+//    }
+//}

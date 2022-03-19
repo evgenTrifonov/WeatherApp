@@ -7,6 +7,8 @@
 
 import Foundation
 
+    
+
 struct DailyWeather: Codable, Identifiable {
     var dt: Int
     var temp: Temperature
