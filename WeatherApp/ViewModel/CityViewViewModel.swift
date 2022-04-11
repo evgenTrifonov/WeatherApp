@@ -22,13 +22,13 @@ final class CityViewViewModel: ObservableObject {
     
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .full
+        formatter.dateFormat = "EEE"
         return formatter
     }()
     
     private lazy var dayFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd EEE"
+        formatter.dateFormat = "dd"
         return formatter
     }()
     
@@ -43,7 +43,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var date: String {
-        return dateFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(weather.current.dt)))
+        return dateFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(weather.current.date)))
     }
     
     var weatherIcon: String {
@@ -55,7 +55,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var temperature: String {
-        return getTempFor(temp: weather.current.temp)
+        return getTempFor(temp: weather.current.temperature)
     }
     
     var conditions: String {
@@ -67,7 +67,7 @@ final class CityViewViewModel: ObservableObject {
     
     //скорость ветра
     var windSpeed: String {
-        return String(format: "%0.1f", weather.current.wind_speed)
+        return String(format: "%0.1f", weather.current.windSpeed)
     }
     
     //влажность
@@ -77,7 +77,7 @@ final class CityViewViewModel: ObservableObject {
     
     //шансы на дождь
     var rainChances: String {
-        return String(format: "%0.0f%%", weather.current.dew_point)
+        return String(format: "%0.1f%%", weather.current.dewPoint)
     }
     
     //получить время
@@ -87,7 +87,7 @@ final class CityViewViewModel: ObservableObject {
     
     //получить температуру
     func getTempFor(temp: Double) -> String {
-        return String(format: "%0.1f", temp - 37.0)
+        return String(format: "%1.0f", temp)
     }
     
     //получить день

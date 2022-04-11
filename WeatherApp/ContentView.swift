@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var cityVM = CityViewViewModel()
+    @StateObject var сityViewViewModel = CityViewViewModel()
     
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
-                MenuHeaderView(cityVM: cityVM).padding()
+                MenuHeaderView(cityVM: сityViewViewModel).padding()
                 ScrollView(showsIndicators: false) {
-                    CityView(cityVM: cityVM)
+                    CityView(cityVM: сityViewViewModel)
                 } .padding(.top, 10)
           
             } .padding(.top, 40)
-        } .background(LinearGradient(gradient: Gradient(colors: [Color.indigo, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
+        } .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
             .edgesIgnoringSafeArea(.all)
     }
 }

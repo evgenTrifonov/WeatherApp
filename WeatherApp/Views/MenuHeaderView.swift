@@ -28,7 +28,7 @@ struct MenuHeaderView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.blue)
                 
-                Image(systemName: "location.fill")
+                Image(systemName: "magnifyingglass")
                 }
             }
             .frame(width: 50, height: 50)
@@ -36,7 +36,7 @@ struct MenuHeaderView: View {
         .foregroundColor(.white)
         .padding()
         .background(ZStack (alignment: .leading) {
-            Image(systemName: "magnifyingglass")
+            Image(systemName: "location.fill")
                 .foregroundColor(.white)
                 .padding(.leading, 10)
             

@@ -7,17 +7,19 @@
 
 import Foundation
 
-    
-
 struct DailyWeather: Codable, Identifiable {
     var dt: Int
     var temp: Temperature
     var weather: [WeatherDetail]
+    var id: UUID {
+        return UUID()
+    }
+    
     
 enum CodingKey: String {
-    case dt
-    case temp
-    case weather
+    case date = "dt"
+    case temperature = "temp"
+    case weather = "weather"
 }
     init() {
         dt = 0
@@ -26,8 +28,3 @@ enum CodingKey: String {
     }
 }
 
-extension DailyWeather {
-    var id: UUID {
-        return UUID()
-    }
-}

@@ -25,7 +25,7 @@ struct DailyWeatherView: View {
                 .frame(width: 30)
             Spacer()
             
-            Text("\(cityVM.getTempFor(temp: weater.temp.max)) | \(cityVM.getTempFor(temp: weater.temp.min)) ℃")
+            Text("\(cityVM.getTempFor(temp: weater.temp.max)) | \(cityVM.getTempFor(temp: weater.temp.min))°C")
                 .frame(width: 50)
             Spacer()
             cityVM.getWeatherIconFor(icon: weater.weather.count > 0 ? weater.weather[0].icon : "sun.max.fill")
