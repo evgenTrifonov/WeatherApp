@@ -65,30 +65,37 @@ final class CityViewViewModel: ObservableObject {
         return ""
     }
     
+    //скорость ветра
     var windSpeed: String {
         return String(format: "%0.1f", weather.current.wind_speed)
     }
     
+    //влажность
     var humidity: String {
         return String(format: "%d%%", weather.current.humidity)
     }
     
+    //шансы на дождь
     var rainChances: String {
         return String(format: "%0.0f%%", weather.current.dew_point)
     }
     
+    //получить время
     func getTimeFor(timestamp: Int) -> String {
         return timeFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(timestamp)))
     }
     
+    //получить температуру
     func getTempFor(temp: Double) -> String {
         return String(format: "%0.1f", temp - 37.0)
     }
     
+    //получить день
     func getDayFor(timestamp: Int) -> String {
         return dayFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(timestamp)))
     }
    
+    //получить расположение
     private func getLocation() {
         CLGeocoder().geocodeAddressString(city) { (placemarks, error) in
             if let places = placemarks, let place = places.first {
@@ -97,6 +104,7 @@ final class CityViewViewModel: ObservableObject {
         }
     }
     
+    //получить погоду
     private func getWeather(coord: CLLocationCoordinate2D?) {
         if let coord = coord {
             let urlString = API.getURLFor(lat: coord.latitude, lon: coord.longitude)
@@ -108,6 +116,7 @@ final class CityViewViewModel: ObservableObject {
         }
     }
     
+    //получить внут. погоду
     private func getWeatherInternal(city: String, for urlString: String) {
         NetworkManager<WeatherResponse>.fetch(for: URL(string: urlString)!) { (result) in
             switch result {
@@ -123,6 +132,7 @@ final class CityViewViewModel: ObservableObject {
         }
     }
     
+    //анимация
     func getLottieAnimationFor(icon: String) -> String {
             switch icon {
                 case "01d":
@@ -166,6 +176,7 @@ final class CityViewViewModel: ObservableObject {
             }
         }
         
+    //иконки
         func getWeatherIconFor(icon: String) -> Image {
             switch icon {
                 case "01d":

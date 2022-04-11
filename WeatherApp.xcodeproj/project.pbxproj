@@ -121,7 +121,6 @@
 		5C85FE7227D75B9F007A7907 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				5C85FE8627D75ED7007A7907 /* LottieAnimations */,
 				5C85FE8527D75EC8007A7907 /* ViewModels */,
 				5C85FE8427D75EB8007A7907 /* Views */,
 				5C85FE8327D75EA0007A7907 /* Models */,
@@ -130,6 +129,7 @@
 				5C85FE7327D75B9F007A7907 /* WeatherAppApp.swift */,
 				5C85FE7527D75B9F007A7907 /* ContentView.swift */,
 				5C85FE7727D75BA0007A7907 /* Assets.xcassets */,
+				5C85FE8627D75ED7007A7907 /* LottieAnimations */,
 				5C85FE7927D75BA0007A7907 /* Preview Content */,
 			);
 			path = WeatherApp;
