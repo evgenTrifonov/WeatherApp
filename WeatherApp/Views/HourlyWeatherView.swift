@@ -12,11 +12,9 @@ struct HourlyWeatherView: View {
     @ObservedObject var сityViewViewModel: CityViewViewModel
     
     var body: some View {
-//        Text("Прогноз на 10 дней")
-//            .frame(alignment: .leading)
-//            .foregroundColor(.white)
+
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 20) {
+            HStack(spacing: 10) {
                 
             ForEach(сityViewViewModel.weather.hourly) { weather in
                 let icon = сityViewViewModel.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon :
@@ -30,11 +28,12 @@ struct HourlyWeatherView: View {
     }
     
     private func getHourlyView(hour: String, image: Image, temp: String) -> some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 10) {
             Text(hour)
             image
-                .foregroundColor(.yellow)
-            Text(temp)
+              
+                
+            Text("\(temp)°C")
             
         }
         .foregroundColor(.white)

@@ -22,11 +22,17 @@ struct DailyWeatherView: View {
     private func dailyCell(weater: DailyWeather) -> some View {
         HStack {
             Text(сityViewViewModel.getDayFor(timestamp: weater.dt).uppercased())
-                .frame(width: 30)
+                .frame(width: 70)
             Spacer()
             
-            Text("\(сityViewViewModel.getTempFor(temp: weater.temp.max)) | \(сityViewViewModel.getTempFor(temp: weater.temp.min))°C")
-                .frame(width: 50)
+            Text("\(сityViewViewModel.getTempFor(temp: weater.temp.max))°C")
+                .frame(width: 40)
+            Spacer()
+            Text("-")
+                .frame(width: 10)
+            Spacer()
+            Text("\(сityViewViewModel.getTempFor(temp: weater.temp.min))°C")
+                .frame(width: 40)
             Spacer()
             сityViewViewModel.getWeatherIconFor(icon: weater.weather.count > 0 ? weater.weather[0].icon : "sun.max.fill")
         }

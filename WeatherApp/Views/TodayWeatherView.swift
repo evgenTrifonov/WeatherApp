@@ -19,18 +19,19 @@ struct TodayWeatherView: View {
             
             HStack(spacing: 20) {
                 LottieView(name: сityViewViewModel.getLottieAnimationFor(icon: сityViewViewModel.weatherIcon))
-                    .frame(width: 100, height: 100)
+                    .frame(width: 50, height: 50)
                 
                 VStack(alignment: .leading) {
                     Text("\(сityViewViewModel.temperature)°C")
-                        .font(.system(size: 42))
+                        .font(.system(size: 35))
                     Text(сityViewViewModel.conditions)
                 }
             }
             //format
+    
             HStack {
                 Spacer()
-                widgetView(image: "wind", color: .green, title: "\(сityViewViewModel.windSpeed) м/сек.")
+                widgetView(image: "wind", color: .green, title: "\(сityViewViewModel.windSpeed) m/s")
                 Spacer()
                 widgetView(image: "drop.fill", color: .blue, title: "\(сityViewViewModel.humidity)")
                 Spacer()

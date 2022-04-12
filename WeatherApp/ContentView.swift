@@ -20,7 +20,14 @@ struct ContentView: View {
                 } .padding(.top, 10)
           
             } .padding(.top, 40)
-        } .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
+        } //.background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
+        .background(
+                    Image("fon")
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.all)
+                )
+
             .edgesIgnoringSafeArea(.all)
     }
 }

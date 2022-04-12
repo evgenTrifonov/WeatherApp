@@ -1,10 +1,12 @@
-//
-//  Localization.swift
-//  WeatherApp
-//
-//  Created by Evgeny Trifonov on 12.04.2022.
-//
+/* 
+  Localization.strings
+  WeatherApp
 
+  Created by Evgeny Trifonov on 13.04.2022.
+  
+*/
+
+"Moscow" = "Москва";
 "Clear" = "Солнечно";
 "Clouds" = "Облачно";
 "Rain" = "Дождь";
@@ -12,3 +14,4 @@
 "Humidity" = "Влажность";
 "Wind speed" = "Ветер";
 "Rain chances" = "Дождь";
+"Today" = "Сегодня";
