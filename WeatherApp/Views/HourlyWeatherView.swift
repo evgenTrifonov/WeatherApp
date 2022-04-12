@@ -9,20 +9,20 @@ import SwiftUI
 
 struct HourlyWeatherView: View {
     
-    @ObservedObject var cityVM: CityViewViewModel
+    @ObservedObject var сityViewViewModel: CityViewViewModel
     
     var body: some View {
-        Text("Прогноз на 10 дней")
-            .frame(alignment: .leading)
-            .foregroundColor(.white)
+//        Text("Прогноз на 10 дней")
+//            .frame(alignment: .leading)
+//            .foregroundColor(.white)
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
                 
-            ForEach(cityVM.weather.hourly) { weather in
-                let icon = cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon :
+            ForEach(сityViewViewModel.weather.hourly) { weather in
+                let icon = сityViewViewModel.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon :
                     "sun.max.fill")
-                let hour = cityVM.getTimeFor(timestamp: weather.date)
-                let temp = cityVM.getTempFor(temp: weather.temperature)
+                let hour = сityViewViewModel.getTimeFor(timestamp: weather.date)
+                let temp = сityViewViewModel.getTempFor(temp: weather.temperature)
                 getHourlyView(hour: hour, image: icon, temp: temp)
                 }
             }

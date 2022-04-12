@@ -9,10 +9,10 @@ import SwiftUI
 
 struct DailyWeatherView: View {
     
-    @ObservedObject var cityVM: CityViewViewModel
+    @ObservedObject var сityViewViewModel: CityViewViewModel
     
     var body: some View {
-        ForEach(cityVM.weather.daily) { weather in
+        ForEach(сityViewViewModel.weather.daily) { weather in
             LazyVStack {
                 dailyCell(weater: weather)
             }
@@ -21,14 +21,14 @@ struct DailyWeatherView: View {
     
     private func dailyCell(weater: DailyWeather) -> some View {
         HStack {
-            Text(cityVM.getDayFor(timestamp: weater.dt).uppercased())
+            Text(сityViewViewModel.getDayFor(timestamp: weater.dt).uppercased())
                 .frame(width: 30)
             Spacer()
             
-            Text("\(cityVM.getTempFor(temp: weater.temp.max)) | \(cityVM.getTempFor(temp: weater.temp.min))°C")
+            Text("\(сityViewViewModel.getTempFor(temp: weater.temp.max)) | \(сityViewViewModel.getTempFor(temp: weater.temp.min))°C")
                 .frame(width: 50)
             Spacer()
-            cityVM.getWeatherIconFor(icon: weater.weather.count > 0 ? weater.weather[0].icon : "sun.max.fill")
+            сityViewViewModel.getWeatherIconFor(icon: weater.weather.count > 0 ? weater.weather[0].icon : "sun.max.fill")
         }
         
         .foregroundColor(.white)

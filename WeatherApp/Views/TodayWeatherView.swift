@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TodayWeatherView: View {
     
-    @ObservedObject var cityVM: CityViewViewModel
+    @ObservedObject var сityViewViewModel: CityViewViewModel
     
     var body: some View {
         VStack(spacing: 10) {
@@ -18,23 +18,23 @@ struct TodayWeatherView: View {
                 .bold()
             
             HStack(spacing: 20) {
-                LottieView(name: cityVM.getLottieAnimationFor(icon: cityVM.weatherIcon))
+                LottieView(name: сityViewViewModel.getLottieAnimationFor(icon: сityViewViewModel.weatherIcon))
                     .frame(width: 100, height: 100)
                 
                 VStack(alignment: .leading) {
-                    Text("\(cityVM.temperature)℃")
+                    Text("\(сityViewViewModel.temperature)°C")
                         .font(.system(size: 42))
-                    Text(cityVM.conditions)
+                    Text(сityViewViewModel.conditions)
                 }
             }
             //format
             HStack {
                 Spacer()
-                widgetView(image: "wind", color: .green, title: "\(cityVM.windSpeed)м/сек.")
+                widgetView(image: "wind", color: .green, title: "\(сityViewViewModel.windSpeed) м/сек.")
                 Spacer()
-                widgetView(image: "drop.fill", color: .blue, title: "\(cityVM.humidity)")
+                widgetView(image: "drop.fill", color: .blue, title: "\(сityViewViewModel.humidity)")
                 Spacer()
-                widgetView(image: "umbrella", color: .red, title: "\(cityVM.rainChances)")
+                widgetView(image: "umbrella", color: .red, title: "\(сityViewViewModel.rainChances)")
                 Spacer()
             }
             

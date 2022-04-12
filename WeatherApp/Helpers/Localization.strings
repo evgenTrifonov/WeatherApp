@@ -1,0 +1,14 @@
+//
+//  Localization.swift
+//  WeatherApp
+//
+//  Created by Evgeny Trifonov on 12.04.2022.
+//
+
+"Clear" = "Солнечно";
+"Clouds" = "Облачно";
+"Rain" = "Дождь";
+"Snow" = "Снег";
+"Humidity" = "Влажность";
+"Wind speed" = "Ветер";
+"Rain chances" = "Дождь";

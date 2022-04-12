@@ -11,7 +11,7 @@ import SwiftUI
 
 struct MenuHeaderView: View {
     
-    @ObservedObject var cityVM: CityViewViewModel
+    @ObservedObject var cityViewViewModel: CityViewViewModel
     @State private var searchTerm = "Москва"
     
     var body: some View {
@@ -22,7 +22,7 @@ struct MenuHeaderView: View {
         
         
         Button {
-            cityVM.city = searchTerm
+            cityViewViewModel.city = searchTerm
         } label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)

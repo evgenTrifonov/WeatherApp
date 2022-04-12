@@ -45,6 +45,8 @@
 		5C85FEC927D7C124007A7907 /* HourlyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FEC827D7C124007A7907 /* HourlyWeatherView.swift */; };
 		5C85FECB27D7C62C007A7907 /* DailyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FECA27D7C62C007A7907 /* DailyWeatherView.swift */; };
 		5C85FECD27D7CA5B007A7907 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FECC27D7CA5B007A7907 /* CityView.swift */; };
+		5C85FF542804B280007A7907 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FF532804B280007A7907 /* Localization.swift */; };
+		5C85FF562804C884007A7907 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FF552804C884007A7907 /* Localization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		5C85FEC827D7C124007A7907 /* HourlyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherView.swift; sourceTree = "<group>"; };
 		5C85FECA27D7C62C007A7907 /* DailyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherView.swift; sourceTree = "<group>"; };
 		5C85FECC27D7CA5B007A7907 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
+		5C85FF532804B280007A7907 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		5C85FF552804C884007A7907 /* Localization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 		5C85FE8127D75E6B007A7907 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5C85FF532804B280007A7907 /* Localization.swift */,
+				5C85FF552804C884007A7907 /* Localization.strings */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -261,7 +267,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ru,
 			);
 			mainGroup = 5C85FE6727D75B9F007A7907;
 			packageReferences = (
@@ -297,6 +302,7 @@
 				5C85FEC027D7ABB9007A7907 /* dayThunderstorm.json in Resources */,
 				5C85FEB827D7ABB9007A7907 /* nightClearSky.json in Resources */,
 				5C85FEBB27D7ABB9007A7907 /* daySnow.json in Resources */,
+				5C85FF562804C884007A7907 /* Localization.strings in Resources */,
 				5C85FEB727D7ABB9007A7907 /* dayScatteredClouds.json in Resources */,
 				5C85FEB227D7ABB9007A7907 /* dayClearSky.json in Resources */,
 				5C85FEBD27D7ABB9007A7907 /* dayMist.json in Resources */,
@@ -325,6 +331,7 @@
 				5C85FEC327D7AE03007A7907 /* MenuHeaderView.swift in Sources */,
 				5C85FE7427D75B9F007A7907 /* WeatherAppApp.swift in Sources */,
 				5C85FEC727D7B726007A7907 /* TodayWeatherView.swift in Sources */,
+				5C85FF542804B280007A7907 /* Localization.swift in Sources */,
 				5C85FE9627D76D9B007A7907 /* Temperature.swift in Sources */,
 				5C85FE9427D76D76007A7907 /* DailyWeather.swift in Sources */,
 				5C85FE9D27D79752007A7907 /* LottieView.swift in Sources */,

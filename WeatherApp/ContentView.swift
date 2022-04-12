@@ -14,9 +14,9 @@ struct ContentView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
-                MenuHeaderView(cityVM: сityViewViewModel).padding()
+                MenuHeaderView(cityViewViewModel: сityViewViewModel).padding()
                 ScrollView(showsIndicators: false) {
-                    CityView(cityVM: сityViewViewModel)
+                    CityView(cityViewViewModel: сityViewViewModel)
                 } .padding(.top, 10)
           
             } .padding(.top, 40)
