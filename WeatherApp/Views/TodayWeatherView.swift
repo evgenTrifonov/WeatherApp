@@ -24,18 +24,18 @@ struct TodayWeatherView: View {
                 VStack(alignment: .leading) {
                     Text("\(сityViewViewModel.temperature)°C")
                         .font(.system(size: 35))
-                    Text(сityViewViewModel.conditions)
+                  //  Text(сityViewViewModel.conditions)
                 }
             }
             //format
     
             HStack {
                 Spacer()
-                widgetView(image: "wind", color: .green, title: "\(сityViewViewModel.windSpeed) m/s")
+                widgetView(image: "wind", color: .green, title: "\(сityViewViewModel.windSpeed) м/сек")
                 Spacer()
-                widgetView(image: "drop.fill", color: .blue, title: "\(сityViewViewModel.humidity)")
+                widgetView(image: "drop.fill", color: .gray, title: "\(сityViewViewModel.humidity)")
                 Spacer()
-                widgetView(image: "umbrella", color: .red, title: "\(сityViewViewModel.rainChances)")
+                widgetView(image: "umbrella", color: .blue, title: "\(сityViewViewModel.rainChances)")
                 Spacer()
             }
             

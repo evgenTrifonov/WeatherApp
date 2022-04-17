@@ -7,11 +7,4 @@
 */
 
 "Moscow" = "Москва";
-"Clear" = "Солнечно";
-"Clouds" = "Облачно";
-"Rain" = "Дождь";
-"Snow" = "Снег";
-"Humidity" = "Влажность";
-"Wind speed" = "Ветер";
-"Rain chances" = "Дождь";
 "Today" = "Сегодня";

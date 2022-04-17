@@ -19,7 +19,6 @@
 		5C85FE9427D76D76007A7907 /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE9327D76D76007A7907 /* DailyWeather.swift */; };
 		5C85FE9627D76D9B007A7907 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE9527D76D9B007A7907 /* Temperature.swift */; };
 		5C85FE9827D77FD3007A7907 /* CityViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE9727D77FD3007A7907 /* CityViewViewModel.swift */; };
-		5C85FE9B27D79674007A7907 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5C85FE9A27D79674007A7907 /* Lottie */; };
 		5C85FE9D27D79752007A7907 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FE9C27D79752007A7907 /* LottieView.swift */; };
 		5C85FEB027D7ABB9007A7907 /* dayShowerRains.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FE9E27D7ABB9007A7907 /* dayShowerRains.json */; };
 		5C85FEB127D7ABB9007A7907 /* dayBrokenClouds.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FE9F27D7ABB9007A7907 /* dayBrokenClouds.json */; };
@@ -47,6 +46,7 @@
 		5C85FECD27D7CA5B007A7907 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FECC27D7CA5B007A7907 /* CityView.swift */; };
 		5C85FF542804B280007A7907 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FF532804B280007A7907 /* Localization.swift */; };
 		5C85FF5A2806167E007A7907 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FF592806167E007A7907 /* Localization.strings */; };
+		5CDD0384280CABD500488B00 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDD0383280CABD500488B00 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C85FE9B27D79674007A7907 /* Lottie in Frameworks */,
+				5CDD0384280CABD500488B00 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +239,7 @@
 			);
 			name = WeatherApp;
 			packageProductDependencies = (
-				5C85FE9A27D79674007A7907 /* Lottie */,
+				5CDD0383280CABD500488B00 /* Lottie */,
 			);
 			productName = WeatherApp;
 			productReference = 5C85FE7027D75B9F007A7907 /* WeatherApp.app */;
@@ -253,7 +253,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					5C85FE6F27D75B9F007A7907 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -272,6 +272,7 @@
 			mainGroup = 5C85FE6727D75B9F007A7907;
 			packageReferences = (
 				5C85FE9927D79674007A7907 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				5CDD0382280CABD500488B00 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 5C85FE7127D75B9F007A7907 /* Products */;
 			projectDirPath = "";
@@ -346,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -407,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -548,12 +551,20 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		5CDD0382280CABD500488B00 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C85FE9A27D79674007A7907 /* Lottie */ = {
+		5CDD0383280CABD500488B00 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5C85FE9927D79674007A7907 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 5CDD0382280CABD500488B00 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
