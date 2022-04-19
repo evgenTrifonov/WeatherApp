@@ -12,15 +12,16 @@ import CoreLocation
 
 final class CityViewViewModel: ObservableObject {
     
+    var conditions: String {
+        return weather.current.weather.first?.main ?? ""
+    }
+    
     @Published var weather = WeatherResponse.empty()
     
-    @Published var city: String = "Москва" {
+    @Published var city: String = "Moscow" {
         didSet {
             getLocation()
         }
-    }
-    var conditions: String {
-        return weather.current.weather.first?.main ?? ""
     }
     
     private lazy var dateFormatter: DateFormatter = {

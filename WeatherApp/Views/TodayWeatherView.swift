@@ -11,9 +11,10 @@ struct TodayWeatherView: View {
     
     @ObservedObject var сityViewViewModel: CityViewViewModel
     
+    
     var body: some View {
         VStack(spacing: 10) {
-            Text("Сегодня")
+            Text("Today")
                 .font(.largeTitle)
                 .bold()
             
