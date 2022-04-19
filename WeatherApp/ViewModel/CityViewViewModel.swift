@@ -19,6 +19,9 @@ final class CityViewViewModel: ObservableObject {
             getLocation()
         }
     }
+    var conditions: String {
+        return weather.current.weather.first?.main ?? ""
+    }
     
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -58,12 +61,6 @@ final class CityViewViewModel: ObservableObject {
         return getTempFor(temp: weather.current.temperature)
     }
     
-    var conditions: String {
-        if weather.current.weather.count > 0 {
-            return weather.current.weather[0].main
-        }
-        return ""
-    }
     
     //скорость ветра
     var windSpeed: String {
