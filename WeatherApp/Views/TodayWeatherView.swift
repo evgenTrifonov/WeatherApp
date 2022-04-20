@@ -14,7 +14,7 @@ struct TodayWeatherView: View {
     
     var body: some View {
         VStack(spacing: 10) {
-            Text("Today")
+            Text("Today".localizated())
                 .font(.largeTitle)
                 .bold()
             
@@ -25,7 +25,7 @@ struct TodayWeatherView: View {
                 VStack(alignment: .leading) {
                     Text("\(сityViewViewModel.temperature)°C")
                         .font(.system(size: 35))
-                  //  Text(сityViewViewModel.conditions)
+//                    Text(сityViewViewModel.conditions)
                 }
             }
             //format

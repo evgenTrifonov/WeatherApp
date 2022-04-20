@@ -18,7 +18,7 @@ final class CityViewViewModel: ObservableObject {
     
     @Published var weather = WeatherResponse.empty()
     
-    @Published var city: String = "Moscow" {
+    @Published var city: String = "Moscow".localizated() {
         didSet {
             getLocation()
         }

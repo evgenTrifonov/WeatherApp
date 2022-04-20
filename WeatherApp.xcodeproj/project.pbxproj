@@ -45,8 +45,8 @@
 		5C85FECB27D7C62C007A7907 /* DailyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FECA27D7C62C007A7907 /* DailyWeatherView.swift */; };
 		5C85FECD27D7CA5B007A7907 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FECC27D7CA5B007A7907 /* CityView.swift */; };
 		5C85FF542804B280007A7907 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85FF532804B280007A7907 /* Localization.swift */; };
-		5C85FF5A2806167E007A7907 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C85FF592806167E007A7907 /* Localization.strings */; };
 		5CDD0384280CABD500488B00 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDD0383280CABD500488B00 /* Lottie */; };
+		5CDD038528109BD800488B00 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CDD038728109BD800488B00 /* Localization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,7 +89,7 @@
 		5C85FECA27D7C62C007A7907 /* DailyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherView.swift; sourceTree = "<group>"; };
 		5C85FECC27D7CA5B007A7907 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		5C85FF532804B280007A7907 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		5C85FF592806167E007A7907 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		5CDD038628109BD800488B00 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localization.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5C85FF532804B280007A7907 /* Localization.swift */,
-				5C85FF592806167E007A7907 /* Localization.strings */,
+				5CDD038728109BD800488B00 /* Localization.strings */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 				5C85FEC027D7ABB9007A7907 /* dayThunderstorm.json in Resources */,
 				5C85FEB827D7ABB9007A7907 /* nightClearSky.json in Resources */,
 				5C85FEBB27D7ABB9007A7907 /* daySnow.json in Resources */,
-				5C85FF5A2806167E007A7907 /* Localization.strings in Resources */,
+				5CDD038528109BD800488B00 /* Localization.strings in Resources */,
 				5C85FEB727D7ABB9007A7907 /* dayScatteredClouds.json in Resources */,
 				5C85FEB227D7ABB9007A7907 /* dayClearSky.json in Resources */,
 				5C85FEBD27D7ABB9007A7907 /* dayMist.json in Resources */,
@@ -341,6 +341,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CDD038728109BD800488B00 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDD038628109BD800488B00 /* ru */,
+			);
+			name = Localization.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5C85FE7C27D75BA0007A7907 /* Debug */ = {

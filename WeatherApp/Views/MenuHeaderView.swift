@@ -13,7 +13,7 @@ struct MenuHeaderView: View {
    
     
     @ObservedObject var cityViewViewModel: CityViewViewModel
-    @State private var searchTerm = "Moscow"
+    @State private var searchTerm = "Moscow".localizated()
     
     var conditions: String {
         return searchTerm
